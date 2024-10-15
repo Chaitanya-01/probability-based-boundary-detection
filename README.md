@@ -1,6 +1,9 @@
 # Probability based boundary detection
 A probability based boundary(or edge) detection algorithm is implemented. Unlike the the classical edge detection algorithms like Canny and Sobel which look for only the intensity discontinuities, the probability of boundary (pb) detection algorithm considers the texture and color discontinuties in addition. This gives the algorithm a better performance compared to the baseline (Canny and Sobel) algorithms. Check the full problem statement [here](https://rbe549.github.io/spring2024/hw/hw0/#sub) for additional details. 
 
+## Process
+
+
 ## Input image
 <img src="Phase1/BSDS500/Images/10.jpg" width="300" height="300"/>
 
@@ -33,11 +36,29 @@ The image has three color channels at each pixel location. We cluster the pixels
 ## Gradients
 To calculate the oriented gradients of each map we need to get the difference between pixels at different directions and sizes(or scales). We can do these calulations efficiently by convolving the half disc masks shown below with the map. By using this approach we calculate the chi-square distances for each map.
 ### Half-disc Masks
-<img src="Phase1/results/half_disc_mask/hd_masks1.png" width="300" height="300"/> 
+<img src="Phase1/results/half_disc_mask/hd_masks1.png" width="600" height="300"/>
+
+### Texture Gradient
+<img src="Phase1/results/T_g/10.png" width="300" height="300"/>
+
+### Brightness Gradient
+<img src="Phase1/results/B_g/10.png" width="300" height="300"/>
+
+### Color Gradient 
+<img src="Phase1/results/C_g/10.png" width="300" height="300"/>
 
 ## Baselines
+Output of the Canny and Sobel detectors for the image.
+### Canny baseline
+<img src="Phase1/BSDS500/CannyBaseline/10.png" width="300" height="300"/>
+
+### Sobel baseline
+<img src="Phase1/BSDS500/SobelBaseline/10.png" width="300" height="300"/>
 
 ## Final Pb-lite output
+Final output obtained by combining the weighted average of outputs from Canny and Sobel operators with the mean gradient of the texture, brightness, and color maps.
+
+<img src="Phase1/results/pb_lite_output/10.png" width="300" height="300"/>
 
 ## Steps to run the code
 
