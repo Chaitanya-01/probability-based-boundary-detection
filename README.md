@@ -61,7 +61,7 @@ Final output obtained by combining the weighted average of outputs from Canny an
 - Navigate to the `Phase1` folder
 
 - Run the following command in the folder
-```bash python3 Code/Wrapper.py```
+```python3 Code/Wrapper.py```
 
 ## References
 Arbelaez, Pablo, et al. "Contour detection and hierarchical image segmentation." IEEE transactions on pattern analysis and machine intelligence 33.5 (2010): 898-916.
