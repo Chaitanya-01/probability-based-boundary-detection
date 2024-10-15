@@ -7,13 +7,13 @@ A probability based boundary(or edge) detection algorithm is implemented. Unlike
 ## Filter banks
 Filter banks contain a list of filters that are applied to the input image to extract various features in it. In this project three filter banks are implemented: DoG filters, Leung-Malik filters and Gabor filters. These help us in measuring and aggregating the regional texture and brightness properties.
 ### Oriented Derivative of Gaussian Filters
-<img src"Phase1/results/filter_banks/DoG.png" width="500" height="300"/>
+<img src="Phase1/results/filter_banks/DoG.png" width="500" height="300"/>
 
 ### Leung-Malik Filters:
-<img src"Phase1/results/filter_banks/LMS.png" width="500" height="500"/>
+<img src="Phase1/results/filter_banks/LMS.png" width="500" height="500"/>
 
 ### Gabor Filters:
-<img src"Phase1/results/filter_banks/gabor-1.png" width="500" height="500"/>
+<img src="Phase1/results/filter_banks/gabor-1.png" width="500" height="500"/>
  
 ## Texton map
 
